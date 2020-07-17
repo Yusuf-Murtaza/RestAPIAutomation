@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-14T18:59:19.688Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5091550800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify if delete book functionality is working fine or not",
+        "description": "",
+        "id": "library-api-validation-using-rest-assured-api;verify-if-delete-book-functionality-is-working-fine-or-not",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5987300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Delete book payload",
+            "match": {
+              "location": "StepDefinition.StepDefForLibraryApi.delete_book_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 236767800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User calls \"DeleteBookAPI\" with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeleteBookAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.StepDefForLibraryApi.user_calls_with_http_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Api call is success with status code 200 ok",
+            "match": {
+              "location": "StepDefinition.StepDefForLibraryApi.api_call_is_success_with_status_code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39894200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The \"msg\" in response body is \"book is successfully deleted\" displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"book is successfully deleted\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.StepDefForLibraryApi.the_in_response_body_is_displayed(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteBook"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Library API validation using Rest Assured API",
+    "description": "",
+    "id": "library-api-validation-using-rest-assured-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeaturesFile/LibraryAPIValidation.feature",
+    "tags": []
+  }
+]
