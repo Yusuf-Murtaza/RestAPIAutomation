@@ -10,8 +10,8 @@ public class TestDataBuild {
         AddBook p = new AddBook();
 
         p.setName("Rest Assured Automation");
-        p.setAisle("2516");
-        p.setIsbn("wipr");
+        p.setAisle("6611");
+        p.setIsbn("tels");
         p.setAuthor("Yusuf Murtaza");
         return p;
     }
